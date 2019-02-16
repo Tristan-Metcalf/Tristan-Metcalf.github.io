@@ -12,11 +12,11 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Tristan-Metcalf"
+title                    : "Tristan Metcalf's Site"
 title_separator          : "-"
 name                     : "Tristan Metcalf"
 description              : ""
@@ -107,8 +107,8 @@ analytics:
 # Site Author
 author:
   name             : "Tristan Metcalf"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Web Developer, programmer, and lifter of heavy things"
+  avatar           : "assets/images/mypictures/me.png"
+  bio              : "Web Developer, programmer, and plat 3 kled main"
   location         : "Birmingham, Al"
   email            :
   links:
@@ -121,9 +121,9 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://linkedin.com/in/tristan-metcalf-b545525b/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Tristan-Metcalf"
@@ -290,6 +290,27 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments:  true
       share: true
       related: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
